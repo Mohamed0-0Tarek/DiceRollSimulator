@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    transition-duration: 0.5s;
+}
+body {
+    height: 100vh;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dice {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 30px;
+    height: 30px;
+    border: solid black 3px;
+    position: relative;
+}
+.dice span {
+    display: block;
+    width: 25%;
+    height: 25%;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+    border-radius: 50%;
+}
+button{
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    background-color:#3C9FC8;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: #317b9b;;
+}
+
+.rolls-history{
+    width: 70%;
+    padding: 10px;
+}
+.roll{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#E8E8E8 ;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0,0.5);
+    border-radius: 10px;
+    padding:15px;
+    margin-bottom:7px ;
+}
+.roll h4{
+    margin: 0;
+}
+.roll .dice{
+    margin: 0;
+    width: 20px;
+    height: 20px;
+}
+
