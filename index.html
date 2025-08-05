@@ -9,24 +9,22 @@
     <body>
         <div class="container">
             <h1>Dice Roll Simulator</h1>
-            <div class="dice">
-                <span></span>
-            </div>
-            <button type="button">Roll Dice</button>
-            <div class="rolls-history">
-                <div class="roll">
-                    <h4>Roll 1:</h4>
-                    <div class="dice">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="roll">
-                    <h4>Roll 1:</h4>
-                    <div class="dice">
-                        <span></span>
-                    </div>
-                </div>
-            </div>
+            <div class="dice" id="dice">&#9856</div>
+            <button type="button" id="roll-button">Roll Dice</button>
+            <ul id="rolls-history">
+                <li class="roll">
+                    Roll 1:
+                    <span>&#9856</span>
+                </li>
+            </ul>
         </div>
+        <script src="logic.js"></script>
     </body>
 </html>
+<!-- Unicode Dice Symbols: Unicode includes a block of "Playing Cards" symbols, which contain dice faces. Each face has a corresponding HTML entity.
+Die Face-1 (⚀): &#9856; or &#x2680;
+Die Face-2 (⚁): &#9857; or &#x2681;
+Die Face-3 (⚂): &#9858; or &#x2682;
+Die Face-4 (⚃): &#9859; or &#x2683;
+Die Face-5 (⚄): &#9860; or &#x2684;
+Die Face-6 (⚅): &#9861; or &#x2685; -->
